@@ -1,0 +1,204 @@
+.body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.body-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+.wrapper {
+  width: 100%;
+}
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(130, 196, 188);
+}
+.wrapper_header {
+  padding: 15px 30px;
+  width: 100%;
+  height: 100%;
+}
+.flex_header {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper_sharik {
+  width: 50px;
+  height: 50px;
+}
+.sharik {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: rgb(231, 150, 29);
+}
+.wrapper_kybiki {
+  width: 550px;
+  height: 50px;
+}
+.flex_kybiki {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.kybiki {
+  width: 100px;
+  height: 50px;
+  background-color: rgb(231, 150, 29);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex_kybiki button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgb(231, 150, 29);
+}
+.flex_kybiki button:hover {
+  background-color: rgb(190, 146, 34);
+}
+.flex_kybiki button a{
+  color: rgb(0, 0, 0);
+  width: 100%;
+}
+
+
+.main {
+  width: 100%;
+  min-height: 1200px;
+  max-height: 3000px;
+}
+.wrapper_2block {
+  width: 100%;
+  height: 100%;
+  padding: 100px 30px;
+}
+.flex_style_1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.flex_style_2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.flex_style_col {
+  border: 1px solid rgb(18, 22, 29);
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* ПЕРВЫЙ БЛОК*/
+._1_block_3korobki {
+  padding: 30px;
+  width: 100%;
+  height: auto;
+}
+._3kybika_style {
+  width: 30%;
+  height: 450px;
+}
+/* ВТОРОЙ БЛОК*/
+._2_block_2korobki {
+  padding: 30px;
+  width: 100%;
+  height: auto;
+}
+._2kybika_style {
+  width: 47%;
+  height: 450px;
+}
+/* КОНЕЦ */
+
+.img {
+  background-color: rgb(180, 199, 227);
+  width: 100%;
+  height: 225px;
+}
+.text {
+  padding: 30px 15px;
+  background-color: rgb(245, 245, 245);
+  width: 100%;
+  height: 225px;
+  font-size: 0.8vw;
+}
+
+
+.footer {
+  margin-top: auto;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(130, 196, 188);
+}
+.burger-btn {
+  display: none;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(255, 255, 255); /* ЦВЕТ ФОНА БУРГЕРА */
+  border: none;
+  outline: none;
+  z-index: 2;
+  cursor: pointer;
+}
+.burger-btn span {
+  left: 5px;
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: rgb(0, 0, 0);
+  transition: background-color .5s, opacity .25s, transform .5s; /* АНИМАЦИЯ */
+  will-change: transform; /* УМЕНЬШАЕТ РЕСУРСОЗАТРАТНОСТЬ НА АНИМАЦИИ */
+}
+.burger-btn:hover span{
+  background-color: rgb(138, 138, 138);
+}
+.burger-btn span:nth-child(1) {
+  transform: translateY(-10px);
+}
+.burger-btn span:nth-child(2) {
+
+}
+.burger-btn span:nth-child(3) {
+  transform: translateY(10px);
+}
+.button_center {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/* Крестик */
+.header.open .burger-btn span:nth-child(1) {
+  transform: translateY(0) rotate(45deg);
+}
+.header.open .burger-btn span:nth-child(2) {
+  opacity: 0;
+}
+.header.open .burger-btn span:nth-child(3) {
+  transform: translateY(0) rotate(-45deg);
+}
+
+
+
+
+/* ДРУГИЕ СТРАНИЦЫ */
+.main_block1_img {
+  padding: 100px 30px;
+  width: 100%;
+
+}
+.main_block1_img img {
+  margin: 0 auto;
+  width: 500px;
+  max-height: 700px;
+}
